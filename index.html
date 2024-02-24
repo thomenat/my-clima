@@ -12,25 +12,30 @@
 <body>
     <div class="weather-app">
     <header>
-        <form action="">
-            <input type="search" placeholder="Enter a city..." required />
-            <input type="submit" value="Search"/>
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+            <input type="submit" value="Search" class="search-form-button"/>
         
         </form>
     </header>
     <main>
+       <div class="weather-app-data">
+       
        <div>
-        <h1>Paris</h1>
-        <p>
+        <h1 class="weather-app-city">Paris</h1>
+        <p class="weather-app-details">
         Saturday 12:29, overcast clouds
         <br />
         Humidity: <strong>74%</strong>, Wind: <strong>8.23km/h</strong>
         </p>
         </div>
-
-       <div>
-        🌥️ 8°C
+       <div class="weather-app-temperature-container">
+        <div class="weather-app-icon">🌥️</div>
+        <div class="weather-app-temperature">8</div> 
+        <div class="weather-app-unit">°C</div>
+        
        </div> 
+    </div>
 
     </main>
 
@@ -38,7 +43,7 @@
 
 <footer>
     This project was coded by 
-    <a href="https://github.com/thomenat" target="_blank">Natália Thomé</a> and is 
+    <a href="https://github.com/thomenat" target="_blank">Natália Thomé</a>, is 
     <a href="https://github.com/thomenat/my-clima" target="_blank">open-sourced on GitHub</a> and hosted on 
     <a href="https://my-clima.netlify.app/" target="_blank">Netlify</a>
 </footer>
